@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: test
+
+---
+spring:
+  profiles: test
+  datasource:
+    initialize: false
+    driver-class-name: com.mysql.jdbc.Driver
+    database: blog
+    host: localhost
+    port: 3306
+    url: jdbc:mysql://${spring.datasource.host}:${spring.datasource.port}/${spring.datasource.database}?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: qwe741852
+  jade4j:
+    caching: false
+    prefix: file:E:\JAVA\htl_Blog\src\main\resources\templates/
+  resources:
+    static-locations: file:E:\JAVA\htl_Blog\src\main\resources\static/
+server:
+    port: 8080

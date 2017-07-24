@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/htl_Blog.iml" filepath="$PROJECT_DIR$/.idea/modules/htl_Blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/htl_Blog_main.iml" filepath="$PROJECT_DIR$/.idea/modules/htl_Blog_main.iml" group="htl_Blog" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/htl_Blog_test.iml" filepath="$PROJECT_DIR$/.idea/modules/htl_Blog_test.iml" group="htl_Blog" />
+    </modules>
+  </component>
+</project>
