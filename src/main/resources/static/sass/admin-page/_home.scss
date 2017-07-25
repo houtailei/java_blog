@@ -1,0 +1,224 @@
+/* =================================================================================
+Top
+================================================================================= */
+
+#top {
+  height: 60px;
+  background: #399bff;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+}
+
+/* =================================================================================
+App Logo
+================================================================================= */
+
+.applogo {
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.14);
+  color: #fff;
+  position: relative;
+  float: left;
+  text-align: center;
+  .logo {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* =================================================================================
+Sidebar Open Button - Show or Hide Sidebar
+================================================================================= */
+
+.sidebar-open-button {
+  height: 60px;
+  font-size: 22px;
+  display: block;
+  width: 62px;
+  text-align: center;
+  float: left;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 19px;
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+  z-index: 1;
+  &:hover, &:active {
+    background: rgba(255, 255, 255, 0.07);
+  }
+}
+
+.sidebar-open-button-mobile {
+  height: 60px;
+  display: none;
+  font-size: 22px;
+  width: 62px;
+  text-align: center;
+  float: left;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 19px;
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+  &:hover, &:active {
+    background: rgba(255, 255, 255, 0.07);
+  }
+}
+
+/* =================================================================================
+Searchbox - Top Search Input
+================================================================================= */
+
+.searchform {
+  width: 220px;
+  margin: 0 20px;
+  float: left;
+  padding-top: 14px;
+  position: relative;
+}
+
+.searchbox {
+  border-radius: 999px;
+  border: none;
+  height: 32px;
+  width: 220px;
+  padding-left: 20px;
+  padding-right: 36px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #37363e;
+  box-shadow: inset none;
+  &:focus {
+    background: #fff;
+    box-shadow: none;
+    border-top: none;
+  }
+}
+
+.searchbutton {
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  background: none;
+  position: absolute;
+  top: 18px;
+  font-size: 16px;
+  right: 15px;
+}
+
+/* =================================================================================
+Top Menu
+================================================================================= */
+
+.topmenu {
+  float: left;
+  padding-top: 20px;
+  padding-left: 0;
+  font-weight: 600;
+  margin-left: -7px;
+  a {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 7px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  li {
+    display: inline;
+  }
+}
+
+/* =================================================================================
+Sidepanel Open Button - Show or Hide Sidepanel
+================================================================================= */
+
+.sidepanel-open-button {
+  height: 60px;
+  font-size: 22px;
+  display: block;
+  width: 62px;
+  text-align: center;
+  float: right;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 19px;
+  border-left: 1px solid rgba(0, 0, 0, 0.14);
+  z-index: 1;
+  &:hover, &:active {
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* =================================================================================
+Top Right
+================================================================================= */
+
+.top-right {
+  line-height: 1.8em;
+  float: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 15px;
+  font-weight: 600;
+  /* profile box */
+  /* notifications */
+  /* hd button */
+  .link {
+    display: inline-block;
+    padding-left: 8px;
+    height: 30px;
+    a {
+      display: block;
+    }
+  }
+  .dropdown-menu {
+    min-width: 135px;
+    .list-title {
+      text-align: center;
+    }
+    li {
+      position: relative;
+      display: block;
+    }
+  }
+  a {
+    color: #fff;
+  }
+  .profilebox {
+    color: rgba(255, 255, 255, 0.95);
+    img {
+      width: 32px;
+      height: 31px;
+      float: left;
+      border-radius: 100%;
+      margin-right: 7px;
+      margin-top: -4px;
+    }
+    .caret {
+      margin-left: 5px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+  .notifications {
+    color: #fff;
+    padding: 4px 12px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 999px;
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .hdbutton {
+    background: #fff;
+    color: #404B5F;
+    padding: 4px 16px;
+    border-radius: 999px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.95);
+    }
+  }
+}
