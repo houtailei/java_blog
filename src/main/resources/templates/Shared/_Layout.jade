@@ -13,4 +13,7 @@ html
     body
         include Nav.jade
         block content
-    block js
+        script(src="/javascripts/responsive-nav.js")
+        script.
+            var navigation = responsiveNav("#navigation-wrapper");
+        block js

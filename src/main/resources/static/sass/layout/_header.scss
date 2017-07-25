@@ -22,8 +22,7 @@
 		ul{
 			li{
 				display: inline-block;
-				margin-right: 18px;
-				margin-left: 18px;
+
 				a{
 					font-size:14px;
 					font-weight: 600;
@@ -34,4 +33,61 @@
 			}
 		}
 	}
+}
+.nav-collapse ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	list-style: none;
+	li {
+		width: 100%;
+		display: block;
+	}
+	.opened {
+		max-height: 9999px;
+	}
+}
+.js .nav-collapse {
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.nav-toggle {
+	webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 70px;
+	height: 55px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-block;
+	background: #333 url(../images/hamburger.gif) no-repeat 50% 33%;
+}
+
+@media screen and (min-width: 40em) {
+	#navigation-wrapper li {
+		float: none;
+		display: inline-block;
+		width: auto;
+		margin-right: 18px;
+		margin-left: 18px;
+	}
+	.js .nav-collapse {
+		position: relative;
+	}
+	.js .nav-collapse.closed {
+		max-height: none;
+	}
+	.nav-toggle {
+		display: none;
+
+	}
+
 }

@@ -8890,10 +8890,8 @@ img {
 /* line 23, ../sass/layout/_header.scss */
 .header .header-menu ul li {
   display: inline-block;
-  margin-right: 18px;
-  margin-left: 18px;
 }
-/* line 27, ../sass/layout/_header.scss */
+/* line 26, ../sass/layout/_header.scss */
 .header .header-menu ul li a {
   font-size: 14px;
   font-weight: 600;
@@ -8902,6 +8900,74 @@ img {
   color: #6a6a6a;
 }
 
+/* line 37, ../sass/layout/_header.scss */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+/* line 43, ../sass/layout/_header.scss */
+.nav-collapse ul li {
+  width: 100%;
+  display: block;
+}
+/* line 47, ../sass/layout/_header.scss */
+.nav-collapse ul .opened {
+  max-height: 9999px;
+}
+
+/* line 51, ../sass/layout/_header.scss */
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+/* line 60, ../sass/layout/_header.scss */
+.nav-toggle {
+  webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 70px;
+  height: 55px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: inline-block;
+  background: #333 url(../images/hamburger.gif) no-repeat 50% 33%;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 75, ../sass/layout/_header.scss */
+  #navigation-wrapper li {
+    float: none;
+    display: inline-block;
+    width: auto;
+    margin-right: 18px;
+    margin-left: 18px;
+  }
+
+  /* line 82, ../sass/layout/_header.scss */
+  .js .nav-collapse {
+    position: relative;
+  }
+
+  /* line 85, ../sass/layout/_header.scss */
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+
+  /* line 88, ../sass/layout/_header.scss */
+  .nav-toggle {
+    display: none;
+  }
+}
 /* line 1, ../sass/page/_home.scss */
 .home {
   margin-top: 60px;
