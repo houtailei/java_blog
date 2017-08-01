@@ -8850,48 +8850,48 @@ h6 {
   margin-bottom: 30px;
 }
 
-/* line 54, ../sass/base/_reset.scss */
-h1 {
-  color: #f44336 !important;
-  line-height: 35px !important;
-}
-
-/* line 59, ../sass/base/_reset.scss */
+/* line 55, ../sass/base/_reset.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 2, ../sass/layout/_header.scss */
+/* line 1, ../sass/layout/_header.scss */
+h1 {
+  color: #f44336;
+  line-height: 35px;
+}
+
+/* line 7, ../sass/layout/_header.scss */
 .header .header-top {
   background-color: #ffffff;
   padding: 40px 0 34px;
   text-align: center;
 }
-/* line 6, ../sass/layout/_header.scss */
+/* line 11, ../sass/layout/_header.scss */
 .header .header-top a {
   font-size: 20px;
   font-weight: bold;
   color: red;
   text-decoration: none;
 }
-/* line 12, ../sass/layout/_header.scss */
+/* line 17, ../sass/layout/_header.scss */
 .header .header-top p {
   line-height: 24px;
   color: #222222;
   margin: 10px 0;
 }
-/* line 18, ../sass/layout/_header.scss */
+/* line 23, ../sass/layout/_header.scss */
 .header .header-menu {
   background-color: #ffffff;
   border-top: 2px solid #ededed;
   text-align: center;
 }
-/* line 23, ../sass/layout/_header.scss */
+/* line 28, ../sass/layout/_header.scss */
 .header .header-menu ul li {
   display: inline-block;
 }
-/* line 26, ../sass/layout/_header.scss */
+/* line 31, ../sass/layout/_header.scss */
 .header .header-menu ul li a {
   font-size: 14px;
   font-weight: 600;
@@ -8900,7 +8900,7 @@ img {
   color: #6a6a6a;
 }
 
-/* line 37, ../sass/layout/_header.scss */
+/* line 42, ../sass/layout/_header.scss */
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -8908,17 +8908,17 @@ img {
   display: block;
   list-style: none;
 }
-/* line 43, ../sass/layout/_header.scss */
+/* line 48, ../sass/layout/_header.scss */
 .nav-collapse ul li {
   width: 100%;
   display: block;
 }
-/* line 47, ../sass/layout/_header.scss */
+/* line 52, ../sass/layout/_header.scss */
 .nav-collapse ul .opened {
   max-height: 9999px;
 }
 
-/* line 51, ../sass/layout/_header.scss */
+/* line 56, ../sass/layout/_header.scss */
 .js .nav-collapse {
   clip: rect(0 0 0 0);
   max-height: 0;
@@ -8928,7 +8928,7 @@ img {
   zoom: 1;
 }
 
-/* line 60, ../sass/layout/_header.scss */
+/* line 65, ../sass/layout/_header.scss */
 .nav-toggle {
   webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -8944,7 +8944,7 @@ img {
 }
 
 @media screen and (min-width: 40em) {
-  /* line 75, ../sass/layout/_header.scss */
+  /* line 80, ../sass/layout/_header.scss */
   #navigation-wrapper li {
     float: none;
     display: inline-block;
@@ -8953,17 +8953,17 @@ img {
     margin-left: 18px;
   }
 
-  /* line 82, ../sass/layout/_header.scss */
+  /* line 87, ../sass/layout/_header.scss */
   .js .nav-collapse {
     position: relative;
   }
 
-  /* line 85, ../sass/layout/_header.scss */
+  /* line 90, ../sass/layout/_header.scss */
   .js .nav-collapse.closed {
     max-height: none;
   }
 
-  /* line 88, ../sass/layout/_header.scss */
+  /* line 93, ../sass/layout/_header.scss */
   .nav-toggle {
     display: none;
   }
