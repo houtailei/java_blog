@@ -1,0 +1,12 @@
+extends ../Shared/_Layout
+block seo
+    title= "BLOG"
+block css
+block content
+    .contain.home
+        h1.title 公告管理
+        textarea.form-control.notice-textarea
+            |!{Notice.text}
+        a#notice-btn.btn.btn-info.btn-sm.notice-btn 确认修改
+block js
+    $("")

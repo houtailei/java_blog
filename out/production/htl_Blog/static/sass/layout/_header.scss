@@ -1,0 +1,98 @@
+h1{
+	color:#f44336 ;
+	line-height: 35px ;
+}
+
+.header{
+	.header-top{
+		background-color: #ffffff;
+		padding: 40px 0 34px;
+		text-align: center;
+		a{
+			font-size:20px;
+			font-weight: bold;
+			color:red;
+			text-decoration:none;
+		}
+		p{
+			line-height: 24px;
+			color: #222222;
+			margin:10px 0 ;
+		}
+	}
+	.header-menu{
+		background-color: #ffffff;
+		border-top:2px solid #ededed;
+		text-align: center;
+		ul{
+			li{
+				display: inline-block;
+
+				a{
+					font-size:14px;
+					font-weight: 600;
+					text-transform: uppercase;
+					line-height: 50px;
+					color: #6a6a6a;
+				}
+			}
+		}
+	}
+}
+.nav-collapse ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+	list-style: none;
+	li {
+		width: 100%;
+		display: block;
+	}
+	.opened {
+		max-height: 9999px;
+	}
+}
+.js .nav-collapse {
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.nav-toggle {
+	webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 70px;
+	height: 55px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: inline-block;
+	background: #333 url(../images/hamburger.gif) no-repeat 50% 33%;
+}
+
+@media screen and (min-width: 40em) {
+	#navigation-wrapper li {
+		float: none;
+		display: inline-block;
+		width: auto;
+		margin-right: 18px;
+		margin-left: 18px;
+	}
+	.js .nav-collapse {
+		position: relative;
+	}
+	.js .nav-collapse.closed {
+		max-height: none;
+	}
+	.nav-toggle {
+		display: none;
+
+	}
+
+}

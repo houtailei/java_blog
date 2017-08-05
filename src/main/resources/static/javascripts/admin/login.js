@@ -61,7 +61,14 @@ jQuery(function($){
                 "password":password
             },
             type:"Get",
-            success: function (r) {}
+            success: function (r) {
+                console.log(r);
+                if(r.Result){
+                    window.location.href="/Admin/Blog";
+                }else {
+                    alert(r.msg);
+                }
+            }
         })
     });
 

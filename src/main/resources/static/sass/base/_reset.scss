@@ -56,3 +56,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.fl {float: left;}
+.fr {float: right;}
+.tl {text-align: left;}
+.tr {text-align: right;}
+.tc {text-align: center;}
+
+.block {display: block;}
+.none {display:none}
+.clear{zoom:1;
+  &:before,&:after {content:"";display:table;}
+  &:after {clear:both;}
+}
+
+.red{
+  color:red;
+}
+
+.fixed{
+  position: fixed;
+  z-index: 2000;
+}

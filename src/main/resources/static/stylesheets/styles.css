@@ -8856,6 +8856,66 @@ img {
   height: auto;
 }
 
+/* line 60, ../sass/base/_reset.scss */
+.fl {
+  float: left;
+}
+
+/* line 61, ../sass/base/_reset.scss */
+.fr {
+  float: right;
+}
+
+/* line 62, ../sass/base/_reset.scss */
+.tl {
+  text-align: left;
+}
+
+/* line 63, ../sass/base/_reset.scss */
+.tr {
+  text-align: right;
+}
+
+/* line 64, ../sass/base/_reset.scss */
+.tc {
+  text-align: center;
+}
+
+/* line 66, ../sass/base/_reset.scss */
+.block {
+  display: block;
+}
+
+/* line 67, ../sass/base/_reset.scss */
+.none {
+  display: none;
+}
+
+/* line 68, ../sass/base/_reset.scss */
+.clear {
+  zoom: 1;
+}
+/* line 69, ../sass/base/_reset.scss */
+.clear:before, .clear:after {
+  content: "";
+  display: table;
+}
+/* line 70, ../sass/base/_reset.scss */
+.clear:after {
+  clear: both;
+}
+
+/* line 73, ../sass/base/_reset.scss */
+.red {
+  color: red;
+}
+
+/* line 77, ../sass/base/_reset.scss */
+.fixed {
+  position: fixed;
+  z-index: 2000;
+}
+
 /* line 1, ../sass/layout/_header.scss */
 h1 {
   color: #f44336;

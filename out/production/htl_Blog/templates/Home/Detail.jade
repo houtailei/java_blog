@@ -1,0 +1,21 @@
+extends ../Shared/_Layout.jade
+block seo
+    title= "BLOG"
+block css
+block content
+    .container.home
+        .row
+            .col-md-8
+                .detial
+                    .title=article.title
+                    .content
+                        |!{article.content}
+            .col-md-4
+                .rightlist.ewm
+                    img(src="/images/bg.jpg")
+                .rightlist.notice
+                    .title 公告
+                    .text
+                        |!{notice.text}
+block js
+
