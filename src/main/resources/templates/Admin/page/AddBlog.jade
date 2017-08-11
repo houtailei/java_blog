@@ -1,0 +1,97 @@
+extends ../Shared/_Layout
+block seo
+    title= "BLOG"
+block css
+block content
+    .contain.blog
+        h1.title 新增博客
+        .blog-box
+            .fl
+                h2.title-sm 标题
+                input.form-control.title
+
+            .fl
+                h2.title-sm 描述
+                input.form-control.desc
+            .fl
+                h2.title-sm 封面图
+                input.form-control.imgurl
+                input(class="btn btn-info imgbtn" style="margin-top: -3px;border:none;" type="button" value="上传")
+        #editor
+        a#cancel(class="btn btn-danger fr" style="margin:10px") 重置
+        a#save(class="btn btn-success fr" style="margin:10px") 保存
+block js
+    script(src="/wangEditor/release/wangEditor.min.js")
+    script.
+        $("#AddBlog").parents(".item").find("ul").slideToggle();
+        $("#AddBlog").addClass("active");
+
+        //创建编辑器
+        var E = window.wangEditor
+        var editor = new E('#editor')
+        editor.create()
+        //重置内容
+        $("#cancel").click(function () {
+            var r = confirm("您确定要重置内容吗")
+            if (r == true) {
+                editor.txt.clear()
+            }
+            else {
+            }
+        })
+        //保存内容
+        $("#save").click(function () {
+           var title=$("input.title").val();
+           var desc=$("input.desc").val();
+           var imgurl=$("input.imgurl").val();
+           var content=editor.txt.html()
+            $.ajax({
+                url: "/api/Admin/addBlog",
+                data: {
+                    "title": title,
+                    "description": desc,
+                    "image": imgurl,
+                    "content": content,
+                    "isdel":1
+                },
+                type: "Post",
+                success: function (r) {
+                    console.log(r);
+                    if (r) {
+                            alert("新增博客成功，请前往上架");
+                            window.location.href = "/Admin/Blog";
+                    } else {
+                        alert("新增博客成功失败，情联系管理员");
+                    }
+                }
+        })
+        })
+
+//        //博客管理 上架 下架
+//        $(".shelves,.off-shelves").click(function () {
+//            var isdel;
+//            if($(this).hasClass("off-shelves")){isdel=1}else{isdel=0}
+//            var articleId = $(this).parents("tr").attr("data-id");
+            $.ajax({
+                url: "/Admin/shelves",
+                data: {
+                    "isdel": isdel,
+                    "id":articleId
+                },
+                type: "Get",
+                success: function (r) {
+                    console.log(r);
+                    if (r) {
+                        if(isdel==1){
+                            alert("下架成功");
+                            window.location.href = "/Admin/Blog";
+                        }else{
+                            alert("上架成功");
+                            window.location.href = "/Admin/Blog";
+                        }
+                    } else {
+                        alert("更新失败，情联系管理员");
+                    }
+//                }
+//            })
+//        })

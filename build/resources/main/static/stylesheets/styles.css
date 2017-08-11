@@ -9093,4 +9093,18 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* line 55, ../sass/page/_home.scss */
+.detial {
+  padding: 26px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+/* line 59, ../sass/page/_home.scss */
+.detial .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

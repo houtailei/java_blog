@@ -11,17 +11,52 @@ block content
                     th #
                     th 标题
                     th.tc 状态
-                    th.tc 阅读
+                    th.tc 创建时间
                     th.tc 操作
             tbody
                 each data,index in articlelist
-                    tr
-                        th(scope='row')=Blog+1
+                    tr(data-id=data.id)
+                        th(scope='row')=index+1
                         td=data.title
+                        td=data.isdel=="0"?"上架":"下架"
+                        td=data.create_time
                         td
-                        td
-                        td
-                            a(class="btn btn-info btn-sm") 编辑
-                            a(class="btn btn-danger btn-sm") 删除
+                            a(class="btn btn-info btn-sm",href="/Admin/UpdateBlog/"+data.id) 编辑
+                            if data.isdel==0
+                                a(class="btn btn-danger btn-sm off-shelves") 下架
+                            else
+                                a(class="btn btn-success btn-sm shelves") 上架
 
 block js
+    script.
+        $("#Blog").parents(".item").find("ul").slideToggle();
+        $("#Blog").addClass("active");
+
+        //博客管理 上架 下架
+        $(".shelves,.off-shelves").click(function () {
+            var isdel;
+            if($(this).hasClass("off-shelves")){isdel=1}else{isdel=0}
+            var articleId = $(this).parents("tr").attr("data-id");
+            $.ajax({
+                url: "/Admin/shelves",
+                data: {
+                    "isdel": isdel,
+                    "id":articleId
+                },
+                type: "Get",
+                success: function (r) {
+                    console.log(r);
+                    if (r) {
+                        if(isdel==1){
+                            alert("下架成功");
+                            window.location.href = "/Admin/Blog";
+                        }else{
+                            alert("上架成功");
+                            window.location.href = "/Admin/Blog";
+                        }
+                    } else {
+                        alert("更新失败，情联系管理员");
+                    }
+                }
+            })
+        })

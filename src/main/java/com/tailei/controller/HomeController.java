@@ -23,7 +23,7 @@ public class HomeController {
     @RequestMapping("/")
     public ModelAndView home() {
         ModelAndView mav = new ModelAndView("/Home/index");
-        String sql = "SELECT * from article";
+        String sql = "SELECT * from article WHERE isdel='0'";
         String sql2 ="SELECT * from notice";
         List list = jdbcTemplate.queryForList(sql);
         List list2=jdbcTemplate.queryForList(sql2);

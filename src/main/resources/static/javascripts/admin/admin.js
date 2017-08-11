@@ -9,6 +9,9 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
 //Notice 公告页面 js
 $("#notice-btn").click(function () {
     var text=$(".notice-textarea").val();
@@ -30,3 +33,4 @@ $("#notice-btn").click(function () {
         }
     })
 })
+

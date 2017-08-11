@@ -27,6 +27,7 @@ dependencyManagement {
     }
 }
 dependencies {
+    compile 'org.apache.commons:commons-lang3'
     compile 'mysql:mysql-connector-java'
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-jdbc'

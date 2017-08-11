@@ -9,4 +9,7 @@ block content
             |!{Notice.text}
         a#notice-btn.btn.btn-info.btn-sm.notice-btn 确认修改
 block js
-    $("")
+    script.
+        console.log($("#Notice").parents(".item"));
+        $("#Notice").parents(".item").find("ul").slideToggle();
+        $("#Notice").addClass("active");

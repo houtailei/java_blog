@@ -9451,17 +9451,12 @@ Sidebar
   display: none;
 }
 
-/* line 441, ../sass/admin-page/_home.scss */
-.blogTable .btn {
-  margin: 0 5px;
-}
-
-/* line 446, ../sass/admin-page/_home.scss */
+/* line 442, ../sass/admin-page/_home.scss */
 .notice-textarea {
   min-height: 200px;
 }
 
-/* line 449, ../sass/admin-page/_home.scss */
+/* line 445, ../sass/admin-page/_home.scss */
 .notice-btn {
   float: right;
   margin-top: 10px;
@@ -9685,6 +9680,38 @@ Sidebar
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+}
+
+/* line 3, ../sass/admin-page/_blog.scss */
+.blogTable .btn {
+  margin: 0 5px;
+}
+
+/* line 8, ../sass/admin-page/_blog.scss */
+.blog .blog-box {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+/* line 11, ../sass/admin-page/_blog.scss */
+.blog .blog-box .fl {
+  width: 33%;
+}
+/* line 13, ../sass/admin-page/_blog.scss */
+.blog .title-sm {
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+  display: inline-block;
+}
+/* line 20, ../sass/admin-page/_blog.scss */
+.blog input.title, .blog input.desc {
+  width: 250px;
+  display: inline-block;
+}
+/* line 24, ../sass/admin-page/_blog.scss */
+.blog input.imgurl {
+  width: 250px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=admin.css.map */

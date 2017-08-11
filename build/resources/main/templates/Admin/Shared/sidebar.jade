@@ -1,7 +1,7 @@
 .sidebar.clearfix
     ul.sidebar-panel.nav
         li.sidetitle MENU
-        li
+        li.item
             a(href="#")
                 span(class="icon-blog" aria-hidden="true")
                 |博客
@@ -9,8 +9,8 @@
             ul
                 li
                     a#Blog.item-sm(href="/Admin/Blog") 博客管理
-                    a.item-sm(href="") 新增博客
-        li
+                    a#AddBlog.item-sm(href="/Admin/AddBlog") 新增博客
+        li.item
             a(href="#")
                 span(class="icon-gg" aria-hidden="true")
                 | 公告

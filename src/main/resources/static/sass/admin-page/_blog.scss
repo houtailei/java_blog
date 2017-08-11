@@ -1,0 +1,31 @@
+//Blog-page
+.blogTable{
+  .btn{
+    margin: 0 5px;
+  }
+}
+.blog{
+  .blog-box{
+    overflow: hidden;
+    margin-bottom: 20px;
+    .fl{width:33%;}
+    }
+  .title-sm{
+    font-size: 16px;
+    padding: 10px;
+    margin:0;
+    display: inline-block;
+  }
+  input{
+    &.title,&.desc{
+      width: 250px;
+      display: inline-block;
+    }
+    &.imgurl{
+      width: 250px;
+      display: inline-block;
+    }
+  }
+
+
+}

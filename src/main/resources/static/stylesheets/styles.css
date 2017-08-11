@@ -9093,4 +9093,34 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* line 55, ../sass/page/_home.scss */
+.detial {
+  padding: 26px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+/* line 59, ../sass/page/_home.scss */
+.detial .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 67, ../sass/page/_home.scss */
+.footer {
+  text-align: center;
+  background: #fff;
+  padding: 20px 0;
+}
+/* line 71, ../sass/page/_home.scss */
+.footer p {
+  text-align: center;
+}
+/* line 73, ../sass/page/_home.scss */
+.footer p a {
+  text-decoration: none !important;
+  color: #e74c3c;
+}
+
 /*# sourceMappingURL=styles.css.map */

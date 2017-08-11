@@ -4,11 +4,14 @@ $(document).ready(function () {
         if ($(this).attr('class') != 'active'){
             $('.nav li ul').slideUp();
             $(this).next().slideToggle();
-            $('.nav li a').removeClass('active');
+            $('.nav>li>a').removeClass('active');
             $(this).addClass('active');
         }
     });
 });
+
+
+
 //Notice 公告页面 js
 $("#notice-btn").click(function () {
     var text=$(".notice-textarea").val();
@@ -30,3 +33,4 @@ $("#notice-btn").click(function () {
         }
     })
 })
+
